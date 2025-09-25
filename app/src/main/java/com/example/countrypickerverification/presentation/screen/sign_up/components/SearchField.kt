@@ -9,11 +9,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.countrypickerverification.R
 
 @Composable
 fun SearchField(
@@ -44,7 +46,7 @@ fun SearchField(
             ) {
                 if (value.text.isEmpty()) {
                     Text(
-                        text = "Search countries...",
+                        text = stringResource(R.string.hint_text_search_bar),
                         style = TextStyle(
                             fontSize = 16.sp,
                             color = Color.Gray

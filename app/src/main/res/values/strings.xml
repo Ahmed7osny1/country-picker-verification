@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CountryPickerverification</string>
+    <string name="header_text">Please login or signup for a</string>
+    <string name="free_sub_header">free</string>
+    <string name="sub_header_text">" account to continue"</string>
+    <string name="select_country">Select Country</string>
+    <string name="no_countries_found">No countries found</string>
+    <string name="hint_text_phone_input">7xxxxxxxx</string>
+    <string name="hint_text_search_bar">Search countries...</string>
+    <string name="one_last_step">One last step</string>
+    <string name="verify_your_account">We will use this to verify your account</string>
+    <string name="guidlines_text">"I agree and comply to the "</string>
+    <string name="guidelines_sub_text">community guidelines</string>
 </resources>

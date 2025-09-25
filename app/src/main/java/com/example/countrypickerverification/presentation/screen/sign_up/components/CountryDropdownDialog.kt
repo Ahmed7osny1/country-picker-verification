@@ -22,12 +22,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
+import com.example.countrypickerverification.R
 import com.example.countrypickerverification.domain.model.Country
 import com.example.countrypickerverification.presentation.screen.sign_up.SignupUiState
 
@@ -58,7 +60,8 @@ fun CountryDropdownDialog(
                     .padding(16.dp)
             ) {
                 Text(
-                    text = "Select Country", style = TextStyle(
+                    text = stringResource(R.string.select_country),
+                    style = TextStyle(
                         fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.Black
                     ), modifier = Modifier.padding(bottom = 16.dp)
                 )
@@ -85,7 +88,8 @@ fun CountryDropdownDialog(
                             modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
                         ) {
                             Text(
-                                text = "No countries found", style = TextStyle(
+                                text = stringResource(R.string.no_countries_found),
+                                style = TextStyle(
                                     fontSize = 16.sp, color = Color.Gray
                                 )
                             )

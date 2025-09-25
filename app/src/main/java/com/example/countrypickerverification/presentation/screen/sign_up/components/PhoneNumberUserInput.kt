@@ -17,10 +17,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.countrypickerverification.R
 import com.example.countrypickerverification.domain.model.Country
 import com.example.countrypickerverification.presentation.extensions.noRibbleClick
 import com.example.countrypickerverification.presentation.screen.sign_up.SignupUiState
@@ -90,7 +92,7 @@ fun PhoneNumberInput(
                 decorationBox = { innerTextField ->
                     if (phoneNumber.isEmpty()) {
                         Text(
-                            text = "7xxxxxxxx",
+                            text = stringResource(R.string.hint_text_phone_input),
                             style = TextStyle(fontSize = 16.sp, color = Color.Gray)
                         )
                     }

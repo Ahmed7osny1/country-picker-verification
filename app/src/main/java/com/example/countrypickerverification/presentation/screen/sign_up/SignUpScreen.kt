@@ -28,6 +28,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -87,7 +88,7 @@ private fun SignUpContent(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "One last step",
+            text = stringResource(R.string.one_last_step),
             style = TextStyle(
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
@@ -116,7 +117,7 @@ private fun SignUpContent(
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "We will use this to verify your account",
+            text = stringResource(R.string.verify_your_account),
             style = TextStyle(fontSize = 12.sp, color = Color.Gray),
             modifier = Modifier.fillMaxWidth()
         )
@@ -140,14 +141,14 @@ private fun SignUpContent(
                             color = Color.Black
                         )
                     ) {
-                        append("I agree and comply to the ")
+                        append(stringResource(R.string.guidlines_text))
                     }
                     withStyle(
                         style = SpanStyle(
                             color = Color(0xFF4B8CF6),
                         )
                     ) {
-                        append("community guidelines")
+                        append(stringResource(R.string.guidelines_sub_text))
                     }
                 },
                 fontSize = 14.sp
